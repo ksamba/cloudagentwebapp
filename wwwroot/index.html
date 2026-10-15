@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An ASP.NET Core demo built with GitHub Copilot cloud agent and ready for Azure.">
+  <title>Cloud Agent Demo</title>
+  <link rel="stylesheet" href="/site.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">GitHub Copilot cloud agent + ASP.NET Core</span>
+      <h1>From idea to cloud.</h1>
+      <p class="intro">A small app. A live API. A launchpad for your next demo.</p>
+      <a class="button" href="#live-demo">Try the live demo <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <section class="cards" aria-label="The demo journey">
+      <article>
+        <span class="step">01 / CREATE</span>
+        <h2>Describe the idea</h2>
+        <p>Turn a GitHub issue into a working app with help from the Copilot cloud agent.</p>
+      </article>
+      <article>
+        <span class="step">02 / COLLABORATE</span>
+        <h2>Review and refine</h2>
+        <p>Explore the pull request, request changes, and watch GitHub Actions build the app.</p>
+      </article>
+      <article>
+        <span class="step">03 / SHIP</span>
+        <h2>Take it to Azure</h2>
+        <p>Configure Azure App Service, then launch the deployment workflow when you're ready.</p>
+      </article>
+    </section>
+
+    <section class="demo" id="live-demo" aria-labelledby="demo-title">
+      <div>
+        <span class="step">LIVE / ASP.NET CORE API</span>
+        <h2 id="demo-title">Meet your backend.</h2>
+        <p>Call <code>/api/demo</code> to get a fresh response from the server.</p>
+        <button class="button" id="call-api" type="button">Call the API</button>
+      </div>
+      <pre id="api-result" role="status" aria-live="polite">Your API response will appear here.</pre>
+    </section>
+
+    <footer>
+      Built with .NET 10 · Ready for GitHub Actions · <a href="/health">Check app health</a>
+    </footer>
+  </main>
+</body>
+</html>
